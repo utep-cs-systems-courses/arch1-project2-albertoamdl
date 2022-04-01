@@ -16,10 +16,10 @@ AS              = msp430-elf-as
 all: toy-c.elf
 
 #additional rules for files
-toy-c.elf: ${COMMON_OBJECTS} ./timerLib/libTimer.a Dim25Green-c.o
+toy-c.elf: ${COMMON_OBJECTS} libTimer.a Dim25Green-c.o
 	${CC} ${CFLAGS} ${LDFLAGS} -o $@ $^
 
-toy-m.elf: ${COMMON_OBJECTS} ./timerLib/libTimer.a Dim25Green-s.o
+toy-m.elf: ${COMMON_OBJECTS} libTimer.a Dim25Green-s.o
 	${CC} ${CFLAGS} ${LDFLAGS} -o $@ $^
 
 load-c: toy-c.elf

@@ -154,7 +154,7 @@ void __interrupt_vec(WDT_VECTOR) WDT()/* 250 interrupts/sec */
     }
   }
 }
-
+/*
 void Dim25Green()
 {  
   switch(greenDim) {
@@ -165,7 +165,7 @@ void Dim25Green()
   case 4: P1OUT &= ~LED_GREEN; greenDim = 1; break;
   }
 }
-
+*/
 
 void Dim50Greem()
 {
